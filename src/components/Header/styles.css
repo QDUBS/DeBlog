@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+
+/* Header */
+.header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  padding: 1% 1%;
+  z-index: 100;
+  box-shadow: 0 0 2px 2px #ccc;
+}
+
+.headerLogo {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  margin: -10px 10px 0 10px;
+  align-self: flex-start;
+}
+
+.headerLogo > .small {
+  font: 900 20px "Open Sans", sans-serif;
+  color: #003;
+}
+
+.headerLogo > .big {
+  font: 900 40px "Roboto", sans-serif;
+  color: #003;
+  margin-top: -10px;
+}
+
+.headerSearch {
+  flex: 1;
+  width: 100%;
+  height: 37px;
+  margin: 0 30px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+}
+
+.headerSearchInput {
+  height: 33px !important;
+  flex: 1;
+  border: none;
+  font: 600 14px "Open Sans", sans-serif;
+  color: #666;
+  padding: 0 10px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.headerSearchInput:focus {
+  outline: none;
+}
+
+.headerSearchInput::-webkit-input-placeholder {
+  font: 600 14px "Open Sans", sans-serif;
+  color: #666;
+}
+
+.headerSearchIcon {
+  background-color: #fff;
+  height: 35px !important;
+  width: 35px !important;
+  font-size: 15px;
+  color: #666;
+  padding: 0 0 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.headerNav {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.headerNav > div {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.headerNavLink {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+}
+
+.headerNavLinkCart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.headerNavLink > div {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+  color: #003;
+}
+
+.span_one {
+  font: 300 14px "Open Sans", sans-serif;
+  color: #003;
+  text-decoration: none;
+}
+
+.span_two {
+  font: 900 16px "Open Sans", sans-serif;
+  color: #003;
+  text-decoration: none;
+}
+
+.cartIcon {
+  color: #003;
+  font-size: 30px;
+}
+
+/* Collection */
+.collectionContainer {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.collections {
+  width: 60%;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 0 2px 2px #ccc;
+}
+
+.collection {
+  width: 25%;
+  height: fit-content;
+  padding: 20px;
+  margin: 0 0 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.collectionHeader {
+  font: 900 14px "Open Sans", sans-serif;
+  color: #000;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #f3f3f3;
+}
+
+.collectionLink a {
+  font: 900 12px "Open Sans", sans-serif;
+  color: #666;
+  padding-top: 5px;
+}

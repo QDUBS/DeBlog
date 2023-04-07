@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+
+.single-post {
+  width: 27%;
+  height: 600px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  border-bottom: 2px solid #666;
+  margin: 2% 3%;
+}
+
+.image-container {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  border-bottom: 1.5px solid #666;
+}
+
+.image-container > img {
+  width: 100%;
+  height: 250px;
+  position: relative;
+}
+
+.timestamp {
+  width: initial;
+  height: 40px;
+  background-color: rgb(98, 185, 98);
+  color: white;
+  font: 600 14px "Open Sans", sans-serif;
+  position: absolute;
+  right: 0;
+  bottom: 5%;
+  border: none;
+  padding: 0 4%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.detail-container {
+  padding: 20px;
+}
+
+.detail-container-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1.5px solid #ccc;
+  padding: 10px 0 20px 0;
+}
+
+.post-title {
+  font: 900 17px "Roboto", sans-serif;
+  color: #003;
+}
+
+.checkbox {
+  width: 25px;
+  height: 25px;
+  background: #5740b9;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.check {
+  font: 900 11px "Roboto", sans-serif;
+  color: white;
+}
+
+.post-description {
+  font: 600 15px "Open Sans", sans-serif;
+  color: #003;
+  display: block;
+  margin: 20px 0;
+}
+
+.post-button {
+  width: 120px;
+  height: 40px;
+  display: block;
+  border-radius: 4px;
+  background: transparent;
+  font: 600 15px "Open Sans", sans-serif;
+  color: rgb(98, 185, 98);
+  border: 1.5px solid rgb(98, 185, 98);
+  transition: 1s;
+}
+
+.post-button:hover {
+  background: rgb(98, 185, 98);
+  color: white;
+}
