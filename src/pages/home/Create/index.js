@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import "./styles.css";
 import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
-import DATA from "../../../data/categories";
+import CATEGORIES from "../../../data/categories";
 import * as Yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import instance from "../../../axios";
-import { useDropzone } from "react-dropzone";
+// import { useDropzone } from "react-dropzone";
 
 
 // Post Schema
@@ -101,7 +101,7 @@ function Create() {
 
             {/* Categories */}
             <h5>Categories</h5>
-            {DATA.map((item, index) => {
+            {CATEGORIES.map((item, index) => {
               return (
                 <div key={item.id} className="checkbox-container">
                   <input

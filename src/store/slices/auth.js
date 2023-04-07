@@ -21,4 +21,4 @@ const authSlice = createSlice({
   },
 });
 
-exports.default = authSlice;
+export default authSlice;

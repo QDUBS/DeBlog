@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useHistory } from "react-router";
+import { useNavigate } from "react-router-dom";
 import "./styles.css";
 import { useDispatch } from "react-redux";
 import authSlice from "../../../store/slices/auth";
@@ -17,7 +17,7 @@ const UserSchema = Yup.object().shape({
 
 function Login() {
   const dispatch = useDispatch();
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const {
     register,
@@ -41,7 +41,7 @@ function Login() {
           })
         );
         dispatch(authSlice.actions.setAccount(res.data.user));
-        history.push("/");
+        navigate("/", { replace: true });
       })
       .catch((err) => {
         console.log(err.response.data.detail.toString());
@@ -54,7 +54,7 @@ function Login() {
     <div className="container">
       <div className="login-content">
         <h1>
-          De<span> BigSea</span>
+          De<span> Blog</span>
         </h1>
 
         <form onSubmit={handleSubmit(onSubmitHandler)}>

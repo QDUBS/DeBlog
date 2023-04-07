@@ -33,7 +33,7 @@ body {
 
 h1 {
   color: #ccc;
-  font: 700 15px;
+  font: 700 22px "Roboto", sans-serif;
 }
 
 h1 > span {

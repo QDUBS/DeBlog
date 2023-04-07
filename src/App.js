@@ -24,10 +24,20 @@ function App() {
 
             {/* Home */}
             <Route path="/" component={AllPosts} />
-            <ProtectedRoute exact path="/" component={Create} />
-            <ProtectedRoute exact path="/" component={Edit} />
+
+            <Route exact path="/create" element={<ProtectedRoute />}>
+              <Route exact path="/create" element={<Create />} />
+            </Route>
+
+            <Route exact path="/edit" element={<ProtectedRoute />}>
+              <Route exact path="/edit" element={<Edit />} />
+            </Route>
+
             <Route path="/post" component={PostDetail} />
-            <ProtectedRoute exact path="/all-posts" component={Posts} />
+
+            <Route exact path="/post" element={<ProtectedRoute />}>
+              <Route exact path="/post" element={<Posts />} />
+            </Route>
           </Routes>
         </Router>
       </PersistGate>

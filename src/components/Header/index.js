@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './styles.css'
 import { Search, Person2Rounded } from '@mui/icons-material'
 import { Link } from 'react-router-dom'

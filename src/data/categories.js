@@ -1,4 +1,4 @@
-export const CATEGORIES = [
+const CATEGORIES = [
   { id: "1", value: "Sports" },
   { id: "2", value: "Fitness" },
   { id: "3", value: "Celebrity Gossip" },
@@ -7,3 +7,5 @@ export const CATEGORIES = [
   { id: "6", value: "Politics" },
   { id: "6", value: "All" },
 ];
+
+export default CATEGORIES;
