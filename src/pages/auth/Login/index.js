@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router";
-// import { useNavigate } from "react-router-dom";
 import "./styles.css";
 import { useDispatch } from "react-redux";
 import authSlice from "../../../store/slices/auth";
@@ -29,9 +28,7 @@ function Login() {
     resolver: yupResolver(UserSchema),
   });
 
-  // const navigate = useNavigate();
-
-  // Submit Post
+  // Login
 
   const onSubmitHandler = (data) => {
     instance
